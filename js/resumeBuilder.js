@@ -2,7 +2,7 @@
 This is empty on purpose! Your code to build the resume will go here.
  */
 
-var name = "Esther";
+var name = "Esther Dev";
 var formattedName = HTMLheaderName.replace("%data%", name);
 
 var role = "Web Developer";
@@ -112,3 +112,19 @@ for (job in work.jobs) {
 }
 
 displayWork();
+
+/*
+function to internationalize name
+*/
+
+function inName(name) {
+    name = name.trim().split(" ");
+    console.log(name);
+    name[1] = name[1].toUpperCase();
+    name[0] = name[0].slice(0,1).toUpperCase() +
+        name[0].slice(1).toLowerCase();
+
+        return name[0] + " "+name[1];
+}
+
+$('#main').append(internationalizeButton);
