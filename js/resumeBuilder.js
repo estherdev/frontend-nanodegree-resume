@@ -111,3 +111,4 @@ for (job in work.jobs) {
     }
 }
 
+displayWork();
